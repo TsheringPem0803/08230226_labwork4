@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tpJourney/css/about.css' %}">
+    <script src="{% static 'tpJourney/js/about.js' %}" defer></script>
+</head>
+<body>
+    <h1>👩‍💻 About Me</h1>
+
+    <img src="{% static 'tpJourney/images/profile.jpg' %}" alt="Profile Picture" class="profile-img">
+
+    <p><b>Name:</b> Tshering Pem</p>
+    <p><b>Student ID:</b> 08230226</p>
+    <p><b>Course:</b> Database Design and Development</p>
+    <p>
+        I am passionate about learning web development using Django.
+        This project helped me understand the MVT architecture and
+        the connection between models, views, and templates.
+    </p>
+
+    <a href="{% url 'index' %}">⬅ Back to Home</a>
+</body>
+</html>
